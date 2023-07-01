@@ -4,7 +4,7 @@
 
 The goal of this project is to perform data analytics on Uber data using various tools and technologies, including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio.
 
-## Insights
+## Uber Data Pipline Project Insights Dashboard
 <img src="Docs/insights.png">
 
 
@@ -34,7 +34,20 @@ Mage is an open-source data pipeline tool for transforming and integrating data
 
 Contibute to this open source project - https://github.com/mage-ai/mage-ai
 
-## Fact & Dimension Table
+## Dataset Used
+TLC Trip Record Data
+Yellow and green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts.
+
+Here is the dataset used in the video - https://github.com/darshilparmar/uber-etl-pipeline-data-engineering-project/blob/main/data/uber_data.csv
+
+More info about dataset can be found here:
+1. Website - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+2. Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
+
+## Data Model
+<img src="Docs/data_model.jpeg">
+
+## Step 1: Creating Fact & Dimension Table
 
 Fact Table:
 - Contains the quantitative measures or metrics used for analysis
@@ -48,15 +61,32 @@ Dimension Table:
 - Contains columns that have low cardinality and do not change frequently
 - Contains columns that can be used for grouping or filtering data for analysis
 
-## Dataset Used
-TLC Trip Record Data
-Yellow and green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts.
+Jupyter Notebook (pandas) and the data csv file:
 
-Here is the dataset used in the video - https://github.com/darshilparmar/uber-etl-pipeline-data-engineering-project/blob/main/data/uber_data.csv
 
-More info about dataset can be found here:
-1. Website - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
-2. Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
+Change Pickup_datetime and dropoff_datetime rom object data type to datetime type. This allows extraction of information from the data.
 
-## Data Model
-<img src="Docs/data_model.jpeg">
+<img src="Docs/1.png">
+
+Using the data model, reset the index and drop the duplicates. Then extract the required hour, day, month, year, weekday and assign to the new columns created for pick hour, pick day, pick month, etc.
+
+Order the data into the correct format ensuring the correct primary key.
+
+For all required data in the data model, drop dupliclicates, reset the index, assign the index to the required ID column and reorder the information as per the data dimension model.
+
+
+<img src="Docs/2.png">
+
+For ratecodeID, we require the rate_code_name which is not in the data frame.
+Therefore, create a data dictionary, drop the duplicates, reset the index, and assign the index to ratecodeID. Use the rate_code_name and map to the ID so the value is assigned to the standard rate. Finally reorder as per the data model.
+
+<img src="Docs/4.png">
+
+NOw all Dimension Tables created, create the Fact Table by joining the dimension tables based on the common columns between the tables.
+
+<img src="Docs/3.png">
+
+
+
+
+
