@@ -145,9 +145,20 @@ For loop efficiently exports all data frames into target BigQuery dat set as req
 
 ## Step 5: SQL Data Analytics in Google BigQuery
 
-SQL query to SELECT important/valuable columns from the required tables to generate data driven insights from.
+SQL query to SELECT important/valuable columns from the required tables to generate data driven insights from. Directly join the tables using primary and foreign keys.
+
 
 <img src="Docs/13.png">
+
+
+Example analytics: Query average uber trip tip based on payment type (Does card payments or cash payment result in a higher or lower tip on average)
+
+SQL query to pull data from required tables.
+Create a new table without duplicates called tbl_analytics
+
+<img src="Docs/14.png">
+
+
 
 
 
