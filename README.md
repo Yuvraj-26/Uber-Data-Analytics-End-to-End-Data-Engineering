@@ -158,6 +158,13 @@ Create a new table without duplicates called tbl_analytics
 
 <img src="Docs/14.png">
 
+## Step 5: Create Dashboard for Data Analysis using Looker Studio
+
+Add data to report/dashboard using BigQuery as Data Source
+Add tbl_analytics
+
+
+
 
 
 
