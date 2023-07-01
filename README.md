@@ -135,7 +135,12 @@ Create a new SSH connection on VM instance and install google-cloud packages and
 
 Using the Data exporter, Create function to export fact_table to BigQuery
 
-<img src="Docs/10.png">
+<img src="Docs/11.png">
+
+Implement exporter function for all data frames in the data model.
+For loop efficiently exports all data frames into target BigQuery dat set as required.
+
+<img src="Docs/12.png">
 
 
 
