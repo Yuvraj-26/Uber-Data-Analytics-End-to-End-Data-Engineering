@@ -162,6 +162,20 @@ Create a new table without duplicates called tbl_analytics
 
 Add data to report/dashboard using BigQuery as Data Source
 Add tbl_analytics
+Create filters to filter information and scorecards to present information.
+Create new field -> CONCAT (pickup_latitude, pickup _longitude), add map as chart, and select created field to create map.
+
+<img src="Docs/15.png">
+
+Create charts to display information to generate/drive insights.
+
+<img src="Docs/16.png">
+
+
+
+
+
+
 
 
 
