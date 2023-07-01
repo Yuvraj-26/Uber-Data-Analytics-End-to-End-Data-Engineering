@@ -1,12 +1,13 @@
 # Uber Data Analytics | Modern Data Engineering GCP Project
 
+Created by Yuvraj M
+
 ## Introduction
 
 The goal of this project is to perform data analytics on Uber data using various tools and technologies, including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio.
 
 ## Uber Data Pipline Project Insights Dashboard
 <img src="Docs/insights.png">
-
 
 ## Architecture
 <img src="Docs/architecture.jpg">
@@ -170,29 +171,4 @@ Create new field -> CONCAT (pickup_latitude, pickup _longitude), add map as char
 Create charts to display information to generate/drive insights.
 
 <img src="Docs/16.png">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
