@@ -91,7 +91,7 @@ Create a bucket and upload data csv file to Google Cloud Storage for public acce
 
 <img src="Docs/5.png">
 
-Create a VM instance, connect SSH, install python and dependencies on the virtual machine. Install mage and start a new project hosted on local host port.
+Create a VM instance, connect SSH, install python and dependencies on the virtual machine. Install mage and start a new project hosted on local host port. Edit firewall rules and create a firewall rule to allow specific port number access.
 
 <img src="Docs/6.png">
 
