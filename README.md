@@ -95,7 +95,7 @@ Create a VM instance, connect SSH, install python and dependencies on the virtua
 
 <img src="Docs/6.png">
 
-## Step 3: Mage UI Python Code
+## Step 3: Mage UI Python Function Implementation
 
 Load Uber data csv by passing the url to the data stored on Google Cloud Storage. Extract the data and load into csv format for usage by mage.
 
@@ -111,12 +111,12 @@ Print the fact table to ensure success.
 
 <img src="Docs/9.png">
 
+Each dataframe converted into dictionary format. This is the method to pass multiple dataframes using load function to load data to bigquery.
 
 <img src="Docs/10.png">
 
 
-
-
+## Step 4:
 
 
 
