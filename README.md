@@ -176,15 +176,22 @@ Create charts to display information to generate/drive insights.
 
 data
 ├─ uber_data.csv
+
 Docs
+
 mage python files
 ├─ extract.py
 ├─ load.py
 ├─ transform.py
+
 analytics_query.sql
+
 commands.txt
+
 get-pip.py
+
 README.md
+
 Uber Data Pipeline.ipynb
 
 
