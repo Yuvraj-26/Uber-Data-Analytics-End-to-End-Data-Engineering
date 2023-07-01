@@ -38,8 +38,6 @@ Contibute to this open source project - https://github.com/mage-ai/mage-ai
 TLC Trip Record Data
 Yellow and green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts.
 
-Here is the dataset used in the video - https://github.com/darshilparmar/uber-etl-pipeline-data-engineering-project/blob/main/data/uber_data.csv
-
 More info about dataset can be found here:
 1. Website - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 2. Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
@@ -82,9 +80,24 @@ Therefore, create a data dictionary, drop the duplicates, reset the index, and a
 
 <img src="Docs/4.png">
 
-NOw all Dimension Tables created, create the Fact Table by joining the dimension tables based on the common columns between the tables.
+Now that all Dimension Tables created, create the Fact Table by joining the dimension tables based on the common columns between the tables.
 
 <img src="Docs/3.png">
+
+## Step 2: Google Cloud Storage and Mage.ai Set Up
+
+Create a bucket and upload data csv file to Google Cloud Storage for public access by python code. Edit permission to fine grained access.
+
+
+<img src="Docs/5.png">
+
+Create a VM instance, connect SSH, install python and dependencies on the virtual machine. Install mage and start a new project hosted on local host port.
+
+<img src="Docs/6.png">
+
+
+
+
 
 
 
