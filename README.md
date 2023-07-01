@@ -159,7 +159,7 @@ Create a new table without duplicates called tbl_analytics
 
 <img src="Docs/14.png">
 
-## Step 5: Create Dashboard for Data Analysis using Looker Studio
+## Step 6: Create Dashboard for Data Analysis using Looker Studio
 
 Add data to report/dashboard using BigQuery as Data Source
 Add tbl_analytics
@@ -171,4 +171,18 @@ Create new field -> CONCAT (pickup_latitude, pickup _longitude), add map as char
 Create charts to display information to generate/drive insights.
 
 <img src="Docs/16.png">
+
+## Repository / Files
+data/
+├─ uber_data.csv
+Docs/
+mage python files/
+├─ extract.py
+├─ load.py
+├─ transform.py
+analytics_query.sql
+commands.txt
+get-pip.py
+README.md
+Uber Data Pipeline.ipynb
 
