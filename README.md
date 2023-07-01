@@ -91,10 +91,28 @@ Create a bucket and upload data csv file to Google Cloud Storage for public acce
 
 <img src="Docs/5.png">
 
-Create a VM instance, connect SSH, install python and dependencies on the virtual machine. Install mage and start a new project hosted on local host port. Edit firewall rules and create a firewall rule to allow specific port number access.
+Create a VM instance, connect SSH, install python and dependencies on the virtual machine. Install mage and start a new project hosted on local host port. Edit firewall rules and create a firewall rule to allow specific port number access to mage UI.
 
 <img src="Docs/6.png">
 
+## Step 3: Mage UI Python Code
+
+Load Uber data csv by passing the url to the data stored on Google Cloud Storage. Extract the data and load into csv format for usage by mage.
+
+<img src="Docs/7.png">
+
+Accept the data from the upstream load block and pass to the Transformer block. Transform the data into the correct structure using the data model.
+
+Create a transformation function using the code logic used to create the fact and dimension table in the jupyter notebook.
+
+<img src="Docs/8.png">
+
+Print the fact table to ensure success.
+
+<img src="Docs/9.png">
+
+
+<img src="Docs/10.png">
 
 
 
