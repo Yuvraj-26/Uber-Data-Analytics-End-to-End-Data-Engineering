@@ -115,8 +115,31 @@ Each dataframe converted into dictionary format. This is the method to pass mult
 
 <img src="Docs/10.png">
 
+Data exporter: Data is loaded from the API, transformation function works correctly, and transformed code has been passed in the dictionary.
 
-## Step 4:
+
+## Step 4: Load Data into Google BigQuery
+
+Create Data exporter block Google (BigQuery).
+Set config path using io.config.yaml file which contains the credentials to connect to BigQuery cloud computing platform.
+
+Google Cloud > API & Services > Credentials 
+Create credentials service account with the BigQuery Admin access role.
+Create a JSON new key
+
+Using the downloaded JSON file for the new key, copy the credentials into the Mage yaml file.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
