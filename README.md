@@ -143,10 +143,11 @@ For loop efficiently exports all data frames into target BigQuery dat set as req
 <img src="Docs/12.png">
 
 
+## Step 5: SQL Data Analytics in Google BigQuery
 
+SQL query to SELECT important/valuable columns from the required tables to generate data driven insights from.
 
-
-
+<img src="Docs/13.png">
 
 
 
