@@ -129,6 +129,20 @@ Create a JSON new key
 
 Using the downloaded JSON file for the new key, copy the credentials into the Mage yaml file.
 
+Google Cloud > Big Query (Data Warehouse and Analytics) 
+Create a dataset and copy dataset name to Mage
+Create a new SSH connection on VM instance and install google-cloud packages and pip packages to the VM.
+
+Using the Data exporter, Create function to export fact_table to BigQuery
+
+<img src="Docs/10.png">
+
+
+
+
+
+
+
 
 
 
