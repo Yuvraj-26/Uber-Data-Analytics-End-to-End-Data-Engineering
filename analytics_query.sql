@@ -21,7 +21,7 @@ f.improvement_surcharge,
 f.total_amount
 FROM 
 
-`data-with-darshil.uber_data_engineering_yt.fact_table` f
+`uber_data_engineering_ym.fact_table` f
 JOIN `uber_data_engineering_ym.datetime_dim` d  ON f.datetime_id=d.datetime_id
 JOIN `uber_data_engineering_ym.passenger_count_dim` p  ON p.passenger_count_id=f.passenger_count_id  
 JOIN `uber_data_engineering_ym.trip_distance_dim` t  ON t.trip_distance_id=f.trip_distance_id  
